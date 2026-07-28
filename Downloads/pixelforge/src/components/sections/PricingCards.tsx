@@ -8,27 +8,27 @@ import { Badge } from "@/components/ui/Badge";
 
 const plans = [
   {
-    name: "Starter",
-    price: "From £250",
-    recurring: "£20/month",
-    desc: "A focused, professional site for new or local businesses.",
-    features: ["Up to 5 pages", "On-page SEO basics", "Hosting & SSL", "Monthly backups"],
+    name: "Discovery",
+    price: "Free consultation",
+    recurring: "",
+    desc: "A short call to understand your goals, audience and the scope you actually need.",
+    features: ["Project goals", "Page list", "Content review", "Initial estimate"],
     highlight: false,
   },
   {
-    name: "Business",
-    price: "From £450",
-    recurring: "£30/month",
-    desc: "More pages, improved performance and ongoing support for growing businesses.",
-    features: ["Up to 15 pages", "SEO setup", "Performance optimisation", "Priority support"],
+    name: "Website build",
+    price: "Fixed quote",
+    recurring: "",
+    desc: "Once the scope is clear, we quote the build as one defined project so there are no surprises.",
+    features: ["Custom design", "Development", "Revisions", "Launch support"],
     highlight: true,
   },
   {
-    name: "Premium",
-    price: "Custom quote",
+    name: "Ongoing care",
+    price: "Monthly support",
     recurring: "",
-    desc: "Full bespoke websites, integrations, and retained support for enterprise needs.",
-    features: ["Fully custom design", "Custom development", "Account manager", "Strategic roadmap"],
+    desc: "Optional hosting, updates and maintenance after launch if you want us to stay involved.",
+    features: ["Hosting", "Security updates", "Backups", "Small fixes"],
     highlight: false,
   },
 ];
@@ -47,12 +47,12 @@ export const PricingCards = () => (
           className={`p-8 h-full flex flex-col ${p.highlight ? "border-accent/60 shadow-glow" : ""}`}
           hover
         >
-          {p.highlight && <Badge className="w-fit mb-4">Most Popular</Badge>}
+          {p.highlight && <Badge className="w-fit mb-4">Best fit for most projects</Badge>}
           <h3 className="text-xl font-semibold text-white">{p.name}</h3>
           <p className="text-muted text-sm mt-2">{p.desc}</p>
           <div className="mt-6">
             <span className="text-3xl font-bold text-white">{p.price}</span>
-            {p.recurring && <span className="text-muted"> + {p.recurring}</span>}
+            {p.recurring && <span className="text-muted"> · {p.recurring}</span>}
           </div>
           <div className="mt-6 space-y-3 flex-1">
             {p.features.map((f) => (
@@ -63,7 +63,7 @@ export const PricingCards = () => (
             ))}
           </div>
           <Button href="/contact" fullWidth className="mt-8" variant={p.highlight ? "primary" : "outline"}>
-            Request a quote
+            Discuss the project
           </Button>
         </Card>
       </motion.div>

@@ -5,27 +5,27 @@ import Footer from "@/components/layout/Footer";
 import { GradientBlobs, CursorGlow } from "@/components/ui/Backdrop";
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://pixelforge.example.com"),
+  metadataBase: new URL("https://northline.studio"),
   title: {
-    default: "PixelForge — Premium Web Design Agency, UK",
-    template: "%s | PixelForge",
+    default: "Northline Studio — Web design for startups",
+    template: "%s | Northline Studio",
   },
   description:
-    "PixelForge is a UK web design agency building fast, modern, high-performance websites for ambitious local businesses.",
+    "Northline Studio builds clean, custom websites for startups and small businesses that need a strong online presence.",
   openGraph: {
-    title: "PixelForge — Premium Web Design Agency, UK",
+    title: "Northline Studio — Web design for startups",
     description:
-      "Bespoke websites, redesigns and ongoing support for UK SMEs. Custom-coded, fast, and built to convert.",
-    url: "https://pixelforge.example.com",
-    siteName: "PixelForge",
+      "Custom websites, redesigns and ongoing support for startups and small businesses. Fast, clear and built to convert.",
+    url: "https://northline.studio",
+    siteName: "Northline Studio",
     locale: "en_GB",
     type: "website",
   },
   twitter: {
     card: "summary_large_image",
-    title: "PixelForge — Premium Web Design Agency, UK",
+    title: "Northline Studio — Web design for startups",
     description:
-      "Bespoke websites, redesigns and ongoing support for UK SMEs. Custom-coded, fast, and built to convert.",
+      "Custom websites, redesigns and ongoing support for startups and small businesses. Fast, clear and built to convert.",
   },
 };
 

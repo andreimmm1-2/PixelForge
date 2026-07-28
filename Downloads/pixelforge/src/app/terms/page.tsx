@@ -12,9 +12,8 @@ export default function TermsPage() {
 
         <h2 className="text-xl font-semibold text-white pt-4">1. Agreement to Terms</h2>
         <p>
-          These Terms of Service govern your use of services provided by PixelForge Digital
-          Ltd ("PixelForge", "we", "us"). By engaging our services, you agree to be bound
-          by these terms.
+          These Terms of Service govern your use of services provided by Northline Studio
+          ("we", "us"). By engaging our services, you agree to be bound by these terms.
         </p>
 
         <h2 className="text-xl font-semibold text-white pt-4">2. Services</h2>
@@ -34,7 +33,7 @@ export default function TermsPage() {
         <h2 className="text-xl font-semibold text-white pt-4">4. Intellectual Property</h2>
         <p>
           Upon full payment, ownership of the final website design and code transfers to
-          the client. PixelForge retains the right to showcase completed work in our
+          the client. We retain the right to showcase completed work in our
           portfolio unless otherwise agreed in writing.
         </p>
 
@@ -52,7 +51,7 @@ export default function TermsPage() {
 
         <h2 className="text-xl font-semibold text-white pt-4">7. Limitation of Liability</h2>
         <p>
-          PixelForge shall not be liable for indirect, incidental or consequential damages
+          Northline Studio shall not be liable for indirect, incidental or consequential damages
           arising from the use of our services, to the maximum extent permitted by law.
         </p>
 
@@ -60,7 +59,7 @@ export default function TermsPage() {
         <p>These terms are governed by the laws of England and Wales.</p>
 
         <h2 className="text-xl font-semibold text-white pt-4">9. Contact</h2>
-        <p>Questions about these terms can be sent to hello@pixelforge.co.uk.</p>
+        <p>Questions about these terms can be sent through the contact form on the website.</p>
       </div>
     </div>
   );

@@ -5,13 +5,13 @@ import { Mail, MapPin, Clock } from "lucide-react";
 
 export const metadata: Metadata = {
   title: "Contact",
-  description: "Get in touch with PixelForge for a free, no-obligation website quote.",
+  description: "Get in touch with Northline Studio for a free website discovery call.",
 };
 
 export default function ContactPage() {
   return (
     <div className="pb-20 px-6 max-w-6xl mx-auto">
-      <SectionHeader eyebrow="Contact" title="Let's build something great" subtitle="Tell us about your project and we'll come back to you within 24 hours." />
+      <SectionHeader eyebrow="Contact" title="Let's talk about your website" subtitle="Tell us what you need and we’ll reply with next steps within 24 hours." />
 
       <div className="grid md:grid-cols-5 gap-10">
         <div className="md:col-span-3">
@@ -23,14 +23,14 @@ export default function ContactPage() {
             <Mail className="w-5 h-5 text-accent mt-1" />
             <div>
               <h4 className="font-semibold text-white">Email us</h4>
-              <p className="text-muted text-sm">hello@pixelforge.co.uk</p>
+              <p className="text-muted text-sm">Use the form for the fastest response</p>
             </div>
           </div>
           <div className="glass rounded-2xl p-6 flex items-start gap-4">
             <MapPin className="w-5 h-5 text-accent mt-1" />
             <div>
               <h4 className="font-semibold text-white">Location</h4>
-              <p className="text-muted text-sm">Bridgwater, Somerset, UK — remote clients welcome</p>
+              <p className="text-muted text-sm">UK-based, remote-first</p>
             </div>
           </div>
           <div className="glass rounded-2xl p-6 flex items-start gap-4">
@@ -40,12 +40,12 @@ export default function ContactPage() {
               <p className="text-muted text-sm">Within 24 hours, Monday to Friday</p>
             </div>
           </div>
-          <div className="glass rounded-2xl overflow-hidden h-56">
-            <iframe
-              title="map"
-              className="w-full h-full grayscale opacity-70"
-              src="https://www.openstreetmap.org/export/embed.html?bbox=-2.99%2C51.11%2C-2.95%2C51.15&layer=mapnik"
-            />
+          <div className="glass rounded-2xl p-6">
+            <h4 className="font-semibold text-white mb-2">What happens next</h4>
+            <p className="text-muted text-sm leading-relaxed">
+              Send the form, tell us what you need, and we’ll reply with a practical next step
+              or a short list of questions if we need a bit more detail.
+            </p>
           </div>
         </div>
       </div>

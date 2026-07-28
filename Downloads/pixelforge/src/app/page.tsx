@@ -2,14 +2,13 @@ import { Hero } from "@/components/sections/Hero";
 import { Stats } from "@/components/sections/Stats";
 import { Features } from "@/components/sections/Features";
 import { HowItWorks } from "@/components/sections/HowItWorks";
-import { PortfolioGrid } from "@/components/sections/PortfolioGrid";
 import { PricingCards } from "@/components/sections/PricingCards";
 import { Accordion } from "@/components/ui/Accordion";
-import { Testimonials } from "@/components/sections/Testimonials";
 import { CTA } from "@/components/sections/CTA";
 import { SectionHeader } from "@/components/ui/SectionHeader";
 import { Button } from "@/components/ui/Button";
-import { projects, faq, testimonials, clientLogos } from "@/lib/constants";
+import { Card } from "@/components/ui/Card";
+import { faq } from "@/lib/constants";
 import { ArrowRight } from "lucide-react";
 
 export default function Home() {
@@ -21,30 +20,36 @@ export default function Home() {
       <HowItWorks />
 
       <section className="py-20 px-6 max-w-6xl mx-auto">
-        <SectionHeader eyebrow="Recent Work" title="Selected projects" subtitle="A few of the businesses we've helped go from invisible to unmissable." />
-        <PortfolioGrid projects={projects.slice(0, 3)} />
-        <div className="text-center mt-10">
-          <Button href="/portfolio" variant="outline">
-            View Full Portfolio <ArrowRight className="w-4 h-4" />
-          </Button>
-        </div>
-      </section>
-
-      <section className="py-14 border-y border-border">
-        <p className="text-center text-muted text-sm mb-8 uppercase tracking-widest">Trusted by growing businesses</p>
-        <div className="max-w-5xl mx-auto px-6 flex flex-wrap justify-center gap-x-10 gap-y-4">
-          {clientLogos.map((logo) => (
-            <span key={logo} className="text-white/30 font-semibold text-lg">{logo}</span>
+        <SectionHeader eyebrow="Current status" title="We’re small on purpose" subtitle="We’re in startup mode, building carefully and taking on a limited number of projects so each one gets proper attention." />
+        <div className="grid md:grid-cols-3 gap-6">
+          {[
+            {
+              title: "No fake case studies",
+              desc: "We’re not pretending to have a long client list yet. The site is being built honestly while the business grows.",
+            },
+            {
+              title: "Focused project intake",
+              desc: "We prefer a handful of well-scoped projects over a busy calendar and rushed delivery.",
+            },
+            {
+              title: "Better foundations first",
+              desc: "Clean design, clear messaging and reliable delivery matter more than inflated claims.",
+            },
+          ].map((item) => (
+            <Card key={item.title} className="p-6 h-full">
+              <h3 className="text-white font-semibold text-lg mb-2">{item.title}</h3>
+              <p className="text-muted text-sm">{item.desc}</p>
+            </Card>
           ))}
         </div>
       </section>
 
       <section className="py-20 px-6 max-w-6xl mx-auto">
-        <SectionHeader eyebrow="Pricing" title="Simple, honest pricing" subtitle="A one-off build cost, plus a small monthly fee for hosting, security and support." />
+        <SectionHeader eyebrow="Pricing" title="How pricing works" subtitle="Every project is quoted after a short discovery call so the scope, timeline and cost are clear before any work starts." />
         <PricingCards />
         <div className="text-center mt-10">
           <Button href="/pricing" variant="outline">
-            Compare Plans in Detail <ArrowRight className="w-4 h-4" />
+            See how we quote <ArrowRight className="w-4 h-4" />
           </Button>
         </div>
       </section>
@@ -59,7 +64,6 @@ export default function Home() {
         </div>
       </section>
 
-      <Testimonials testimonials={testimonials} />
       <CTA />
     </>
   );

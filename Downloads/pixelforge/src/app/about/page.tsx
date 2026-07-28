@@ -1,57 +1,53 @@
 import type { Metadata } from "next";
 import { SectionHeader } from "@/components/ui/SectionHeader";
-import { Testimonials } from "@/components/sections/Testimonials";
 import { CTA } from "@/components/sections/CTA";
-import { teamMembers, testimonials } from "@/lib/constants";
 
 export const metadata: Metadata = {
   title: "About Us",
-  description: "PixelForge is a UK web design agency helping local businesses grow online with fast, custom-built websites.",
+  description: "Northline Studio is a small UK web design studio helping startups launch with clear, custom-built websites.",
 };
 
 export default function AboutPage() {
   return (
     <div className="pb-10">
       <div className="px-6 pt-10 max-w-3xl mx-auto">
-        <SectionHeader eyebrow="About Us" title="A small team, obsessed with the details" />
+        <SectionHeader eyebrow="About Us" title="A small studio, focused on the essentials" />
         <div className="space-y-5 text-muted text-lg leading-relaxed">
           <p>
-            PixelForge began as a local collaboration between a designer and a developer who
-            were tired of seeing small businesses stuck with slow, forgettable sites. We focus
-            on practical design and technical craftsmanship so every project earns its place.
+            Northline Studio started as a small collaboration between a designer and a developer
+            who were tired of seeing startups launch with generic, forgettable sites. We focus on
+            practical design and technical craftsmanship so every project earns its place.
           </p>
 
           <p>
-            We build websites for retailers, hospitality, clinics and professional services —
-            businesses that rely on clear messaging and measurable leads. Our work balances
-            clean design with fast performance and straightforward processes so you can see
-            the return on your investment.
+            We build websites for early-stage businesses that need clear messaging, strong
+            visual structure and a site that feels credible from day one. Our work balances
+            clean design with fast performance and a straightforward process.
           </p>
 
           <p>
-            We’re a small, UK-based team that values direct communication, realistic timelines,
-            and honest pricing. If your website could do more for your business, start with a
-            short, free consultation and we'll share practical next steps.
+            We’re a small, UK-based team that values direct communication, realistic timelines
+            and honest quoting. If you need a strong starting point online, start with a short
+            free consultation and we’ll outline practical next steps.
           </p>
         </div>
       </div>
 
       <div className="py-20 px-6 max-w-6xl mx-auto">
-        <SectionHeader eyebrow="Our Team" title="The people behind the pixels" />
+        <SectionHeader eyebrow="What we do" title="A practical team structure" />
         <div className="grid sm:grid-cols-3 gap-6">
-          {teamMembers.map((m) => (
-            <div key={m.name} className="glass rounded-2xl p-8 text-center">
-              <div className="w-16 h-16 rounded-full bg-gradient-to-br from-accent to-accent-2 mx-auto mb-4 flex items-center justify-center text-xl font-bold text-white">
-                {m.name.split(" ").map((n) => n[0]).join("")}
-              </div>
-              <h3 className="font-semibold text-white">{m.name}</h3>
-              <p className="text-muted text-sm">{m.role}</p>
+          {[
+            { title: "Strategy", desc: "Defining pages, priorities and a launch plan that makes sense for your business." },
+            { title: "Design", desc: "Creating a clean visual system that feels premium without looking overdone." },
+            { title: "Build", desc: "Turning the design into a fast, accessible website that is easy to maintain." },
+          ].map((item) => (
+            <div key={item.title} className="glass rounded-2xl p-8">
+              <h3 className="font-semibold text-white text-lg mb-2">{item.title}</h3>
+              <p className="text-muted text-sm leading-relaxed">{item.desc}</p>
             </div>
           ))}
         </div>
       </div>
-
-      <Testimonials testimonials={testimonials} />
       <CTA />
     </div>
   );

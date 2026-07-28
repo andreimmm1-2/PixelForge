@@ -6,17 +6,17 @@ import { SectionHeader } from "@/components/ui/SectionHeader";
 import { Palette, Zap, Search, ShieldCheck, PoundSterling, MapPin } from "lucide-react";
 
 const features = [
-  { icon: Palette, title: "Bespoke Design", desc: "Every pixel crafted to reflect your brand's voice, not a template." },
-  { icon: Zap, title: "Lightning Fast", desc: "Built on Next.js with sub-2s load times and Core Web Vitals in the green." },
-  { icon: Search, title: "SEO Ready", desc: "Structured data and semantic HTML from day one, so Google understands you." },
-  { icon: ShieldCheck, title: "Ongoing Support", desc: "Monthly maintenance, security patches, and priority support included." },
-  { icon: PoundSterling, title: "Transparent Pricing", desc: "Clear upfront and recurring costs. No hidden fees, ever." },
-  { icon: MapPin, title: "UK Based Team", desc: "Local developers who understand your market and your customers." },
+  { icon: Palette, title: "Custom design", desc: "Every page is shaped around your business instead of a generic template." },
+  { icon: Zap, title: "Fast delivery", desc: "Small teams need momentum, so we keep the process lean and responsive." },
+  { icon: Search, title: "SEO foundations", desc: "Semantic markup, metadata and clean structure are in place from day one." },
+  { icon: ShieldCheck, title: "Maintenance available", desc: "If you want ongoing support, we can keep the site updated after launch." },
+  { icon: PoundSterling, title: "Clear quoting", desc: "You get a written scope and quote before any work starts." },
+  { icon: MapPin, title: "UK-based", desc: "We work remotely with UK clients and keep communication straightforward." },
 ];
 
 export const Features = () => (
   <section className="py-20 px-6 max-w-6xl mx-auto">
-    <SectionHeader eyebrow="Why PixelForge" title="Built different, built better" subtitle="We blend the discipline of enterprise engineering with the creativity of a boutique studio." />
+    <SectionHeader eyebrow="Why choose us" title="Built for early-stage businesses" subtitle="Clear scope, clean design, and practical execution for teams that need a professional website without the agency fluff." />
     <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
       {features.map((f, i) => (
         <motion.div

@@ -12,9 +12,8 @@ export default function PrivacyPage() {
 
         <h2 className="text-xl font-semibold text-white pt-4">1. Who we are</h2>
         <p>
-          PixelForge Digital Ltd ("PixelForge", "we", "us") is a web design agency based in
-          the United Kingdom. This policy explains how we collect, use and protect your
-          personal data.
+          Northline Studio ("we", "us") is a web design studio based in the United Kingdom.
+          This policy explains how we collect, use and protect your personal data.
         </p>
 
         <h2 className="text-xl font-semibold text-white pt-4">2. Information we collect</h2>
@@ -41,7 +40,7 @@ export default function PrivacyPage() {
         <h2 className="text-xl font-semibold text-white pt-4">5. Your rights</h2>
         <p>
           Under UK GDPR, you have the right to access, correct, or request deletion of your
-          personal data. To exercise these rights, contact us at hello@pixelforge.co.uk.
+          personal data. To exercise these rights, contact us through the website form.
         </p>
 
         <h2 className="text-xl font-semibold text-white pt-4">6. Cookies</h2>
@@ -54,7 +53,7 @@ export default function PrivacyPage() {
         <p>We may update this policy from time to time. Material changes will be reflected on this page.</p>
 
         <h2 className="text-xl font-semibold text-white pt-4">8. Contact</h2>
-        <p>Questions about this policy can be sent to hello@pixelforge.co.uk.</p>
+        <p>Questions about this policy can be sent through the contact form on the website.</p>
       </div>
     </div>
   );

@@ -15,7 +15,7 @@ export const Hero = () => {
       >
         <div className="mb-6 inline-flex items-center gap-3 px-4 py-1.5 rounded-full glass text-sm text-white/80">
           <span className="w-2 h-2 rounded-full bg-success animate-pulse" />
-          UK-based — selective bookings
+          Startup studio — limited project intake
         </div>
 
         <motion.h1
@@ -76,7 +76,7 @@ export const Hero = () => {
             <div className="p-6 h-full flex items-center justify-center">
               <div className="w-full h-full bg-gradient-to-tr from-[#111827] to-[#0b1220] rounded-xl flex items-center justify-center">
                 <div className="w-[88%] h-[78%] bg-gradient-to-b from-white/6 to-transparent rounded-lg border border-white/6 flex items-center justify-center">
-                  <div className="text-sm text-muted text-center px-6">Live project preview — visit the portfolio to explore full case studies</div>
+                  <div className="text-sm text-muted text-center px-6">Website direction preview — live case studies will be added as real projects launch</div>
                 </div>
               </div>
             </div>

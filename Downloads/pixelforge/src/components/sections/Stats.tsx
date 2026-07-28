@@ -1,40 +1,17 @@
 "use client";
 
-import { motion, useInView, animate } from "framer-motion";
-import { useEffect, useRef, useState } from "react";
+import { motion } from "framer-motion";
+import { Card } from "@/components/ui/Card";
 
 const stats = [
-  { value: 50, suffix: "+", label: "Projects Delivered" },
-  { value: 100, suffix: "%", label: "Client Satisfaction" },
-  { value: 24, suffix: "h", label: "Average Response Time" },
+  { label: "Project focus", value: "Limited project intake while the studio grows" },
+  { label: "Response time", value: "Usually within 1 working day" },
+  { label: "Build style", value: "Custom-coded, not a page builder template" },
 ];
-
-const Counter = ({ value, suffix }: { value: number; suffix: string }) => {
-  const ref = useRef<HTMLSpanElement>(null);
-  const inView = useInView(ref, { once: true, margin: "-50px" });
-  const [display, setDisplay] = useState(0);
-
-  useEffect(() => {
-    if (!inView) return;
-    const controls = animate(0, value, {
-      duration: 1.4,
-      ease: "easeOut",
-      onUpdate: (v) => setDisplay(Math.round(v)),
-    });
-    return () => controls.stop();
-  }, [inView, value]);
-
-  return (
-    <span ref={ref} className="text-4xl md:text-5xl font-bold text-white">
-      {display}
-      {suffix}
-    </span>
-  );
-};
 
 export const Stats = () => (
   <section className="py-16 border-y border-border bg-card/20">
-    <div className="max-w-5xl mx-auto px-6 grid grid-cols-1 md:grid-cols-3 gap-10 text-center">
+    <div className="max-w-5xl mx-auto px-6 grid grid-cols-1 md:grid-cols-3 gap-6">
       {stats.map((s, i) => (
         <motion.div
           key={s.label}
@@ -42,10 +19,12 @@ export const Stats = () => (
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ delay: i * 0.1, duration: 0.5 }}
-          className="flex flex-col items-center gap-2"
+          className="h-full"
         >
-          <Counter value={s.value} suffix={s.suffix} />
-          <p className="text-muted">{s.label}</p>
+          <Card className="p-6 h-full text-center">
+            <p className="text-xs uppercase tracking-widest text-accent mb-2">{s.label}</p>
+            <p className="text-white text-lg font-medium">{s.value}</p>
+          </Card>
         </motion.div>
       ))}
     </div>

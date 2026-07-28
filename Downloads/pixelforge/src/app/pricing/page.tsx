@@ -8,7 +8,7 @@ import { faq } from "@/lib/constants";
 
 export const metadata: Metadata = {
   title: "Pricing",
-  description: "Simple, transparent pricing for websites, hosting and ongoing support.",
+  description: "How Northline Studio scopes and quotes website projects, plus optional monthly care.",
 };
 
 const pricingFaq = faq.filter((f) => f.question.toLowerCase().includes("cost") || f.question.toLowerCase().includes("plan") || f.question.toLowerCase().includes("month") || f.question.toLowerCase().includes("pay"));
@@ -17,12 +17,12 @@ export default function PricingPage() {
   return (
     <div className="pb-10">
       <div className="px-6 pt-10">
-        <SectionHeader eyebrow="Pricing" title="One clear price, no surprises" subtitle="A one-off build cost plus a small monthly fee covering hosting, security, backups and support." />
+        <SectionHeader eyebrow="Pricing" title="Quoted to the project" subtitle="We don’t use fake starter prices. Every build is scoped after a short discovery call, then quoted clearly before work begins." />
       </div>
       <PricingCards />
 
       <div className="py-20 px-6">
-        <SectionHeader eyebrow="Compare" title="What's included in each plan" />
+        <SectionHeader eyebrow="Included" title="How we structure the work" />
         <ComparisonTable />
       </div>
 

@@ -155,13 +155,13 @@ export const services: Service[] = [
 export const faq: FAQItem[] = [
   { question: "How long does a typical website take to build?", answer: "Most projects are delivered within 4-6 weeks from kickoff to launch, depending on scope and how quickly feedback comes back to us." },
   { question: "Do you provide ongoing maintenance?", answer: "Yes. We offer monthly maintenance packages covering security updates, performance monitoring and priority support." },
-  { question: "What's included in the Starter plan?", answer: "A five-page custom site, basic on-page SEO, hosting and an SSL certificate, all backed by our £20/month care plan." },
+  { question: "What does a website quote include?", answer: "Each quote is based on the pages, features and level of support your project needs, so we can keep the scope clear from the start." },
   { question: "Can you redesign my existing website?", answer: "Absolutely. We audit your current site, preserve your SEO rankings, and rebuild it with a modern design system and faster performance." },
   { question: "Do I own the website once it's built?", answer: "Yes, full ownership of the code and design transfers to you on final payment. There's no lock-in." },
   { question: "Will my website work on mobile?", answer: "Every site we build is mobile-first and tested across devices before launch." },
   { question: "Do you write the content for me?", answer: "We can. Copywriting is available as an add-on, or we're happy to work with content you already have." },
-  { question: "How much does a website cost?", answer: "Starter projects begin at £250 plus £20/month, with Business plans from £450 plus £30/month. Premium projects are custom-quoted." },
-  { question: "What's the £20/month for?", answer: "It covers hosting, SSL, backups, security monitoring and small ongoing fixes so you never have to think about the technical side." },
+  { question: "How do you price a project?", answer: "We scope each project after discovery and then send a fixed quote before work starts." },
+  { question: "What does monthly care cover?", answer: "It typically includes hosting, SSL, backups, security monitoring and small ongoing fixes so you do not have to manage the technical side." },
   { question: "Can I cancel the monthly plan?", answer: "Yes, with 30 days' notice. You keep full ownership of the site regardless." },
   { question: "Do you offer e-commerce websites?", answer: "Yes, from simple product catalogues to full checkout and inventory systems." },
   { question: "How do I request changes after launch?", answer: "Simply message your account manager. Small changes are usually turned around within 48 hours." },
@@ -176,10 +176,10 @@ export const faq: FAQItem[] = [
 ];
 
 export const testimonials: Testimonial[] = [
-  { name: "Sarah Mitchell", role: "Marketing Director", company: "Bloom Boutique", content: "PixelForge turned our outdated site into a fast, modern shop that doubled our online revenue within two months.", rating: 5 },
-  { name: "James Okafor", role: "Owner", company: "The Tap Room", content: "They understood exactly what our pub needed. Bookings through the site went up almost immediately after launch.", rating: 5 },
-  { name: "Priya Anand", role: "Practice Manager", company: "Harbourside Dental", content: "Professional from the first call to the final handover. Our patients constantly comment on how easy the new site is to use.", rating: 5 },
-  { name: "Tom Whitfield", role: "Founder", company: "Greenline Logistics", content: "The performance improvements alone paid for the project. Our site finally feels as serious as the business it represents.", rating: 4 },
+  { name: "Project note", role: "Startup website", company: "Placeholder", content: "Real client testimonials will be added here once the studio has live projects to reference.", rating: 5 },
+  { name: "Project note", role: "Startup website", company: "Placeholder", content: "This space is reserved for genuine feedback instead of invented quotes.", rating: 5 },
+  { name: "Project note", role: "Startup website", company: "Placeholder", content: "We’d rather be honest about being early-stage than fabricate social proof.", rating: 5 },
+  { name: "Project note", role: "Startup website", company: "Placeholder", content: "A real portfolio and real testimonials will replace these placeholders over time.", rating: 5 },
 ];
 
 export const teamMembers: TeamMember[] = [

@@ -33,12 +33,12 @@ export default function Navbar() {
           scrolled ? "h-14 glass shadow-soft" : "h-20 bg-transparent"
         }`}
       >
-        <Link href="/" className="flex items-center gap-3 font-bold text-lg text-white" aria-label="PixelForge home">
+        <Link href="/" className="flex items-center gap-3 font-bold text-lg text-white" aria-label="Northline Studio home">
           <span className="w-8 h-8 rounded-lg bg-gradient-to-br from-accent to-accent-2 flex items-center justify-center">
             <Sparkles className="w-4 h-4 text-white" />
           </span>
-          <span className="leading-none">PixelForge</span>
-          <span className="sr-only">— digital agency</span>
+          <span className="leading-none">Northline Studio</span>
+          <span className="sr-only">— web design</span>
         </Link>
 
         <div className="hidden md:flex items-center gap-1">

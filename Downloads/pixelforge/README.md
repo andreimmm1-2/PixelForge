@@ -1,6 +1,6 @@
-# PixelForge — Premium Web Agency Website
+# Northline Studio — Startup Web Design Website
 
-A Next.js 14 + TypeScript + Tailwind + Framer Motion website for a fictional UK web design agency.
+A Next.js 14 + TypeScript + Tailwind + Framer Motion website for a fictional UK web studio.
 
 ## Run locally
 
@@ -24,7 +24,7 @@ npm start
 cd pixelforge
 git init
 git add .
-git commit -m "Initial commit: PixelForge agency site"
+git commit -m "Initial commit: Northline Studio site"
 git branch -M main
 git remote add origin https://github.com/YOUR_USERNAME/YOUR_REPO.git
 git push -u origin main

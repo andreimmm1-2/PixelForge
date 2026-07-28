@@ -7,15 +7,15 @@ export default function Footer() {
     <footer className="relative z-10 mt-24 border-t border-border">
       <div className="max-w-6xl mx-auto px-6 py-16 grid md:grid-cols-4 gap-10">
         <div>
-          <Link href="/" className="flex items-center gap-3 font-bold text-lg text-white mb-4" aria-label="PixelForge home">
+          <Link href="/" className="flex items-center gap-3 font-bold text-lg text-white mb-4" aria-label="Northline Studio home">
             <span className="w-8 h-8 rounded-lg bg-gradient-to-br from-accent to-accent-2 flex items-center justify-center">
               <Sparkles className="w-4 h-4 text-white" />
             </span>
-            <span>PixelForge</span>
-            <span className="sr-only">— digital agency</span>
+            <span>Northline Studio</span>
+            <span className="sr-only">— web design</span>
           </Link>
           <p className="text-muted text-sm max-w-xs">
-            Bespoke, performance-first websites for ambitious UK businesses.
+            Custom websites for startups and small businesses that need a clearer, stronger online presence.
           </p>
           <div className="flex gap-3 mt-6">
             {[Twitter, Instagram, Linkedin].map((Icon, i) => (
@@ -53,13 +53,13 @@ export default function Footer() {
 
         <div>
           <h4 className="font-semibold text-white mb-4">Get in touch</h4>
-          <p className="text-muted text-sm"><a href="mailto:hello@pixelforge.co.uk" className="hover:underline">hello@pixelforge.co.uk</a></p>
-          <p className="text-muted text-sm mt-2">Bridgwater, Somerset, UK — available for local projects</p>
+          <p className="text-muted text-sm">Use the contact form for the quickest response.</p>
+          <p className="text-muted text-sm mt-2">UK-based, remote-first</p>
         </div>
       </div>
 
       <div className="border-t border-border py-6 text-center text-xs text-muted">
-        © {new Date().getFullYear()} PixelForge Digital Ltd. All rights reserved.
+        © {new Date().getFullYear()} Northline Studio. All rights reserved.
       </div>
     </footer>
   );
