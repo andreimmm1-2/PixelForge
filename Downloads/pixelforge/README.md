@@ -1,6 +1,6 @@
-# Northline Studio — Startup Web Design Website
+# Gaith — Startup Web Design Website
 
-A Next.js 14 + TypeScript + Tailwind + Framer Motion website for a fictional UK web studio.
+A Next.js 14 + TypeScript + Tailwind + Framer Motion website for a startup web studio.
 
 ## Run locally
 
@@ -24,7 +24,7 @@ npm start
 cd pixelforge
 git init
 git add .
-git commit -m "Initial commit: Northline Studio site"
+git commit -m "Initial commit: Gaith site"
 git branch -M main
 git remote add origin https://github.com/YOUR_USERNAME/YOUR_REPO.git
 git push -u origin main
@@ -37,7 +37,7 @@ git push -u origin main
 1. Push this repo to GitHub.
 2. In GitHub, go to **Settings → Pages** and set the source to **GitHub Actions**.
 3. Push to `main` and the workflow will build the static export and publish it.
-4. Your site will be available at `https://YOUR_USERNAME.github.io/PixelForge/`.
+4. Your site will be available at `https://YOUR_USERNAME.github.io/Gaith/`.
 
 ## Notes
 

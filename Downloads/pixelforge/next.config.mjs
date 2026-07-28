@@ -1,7 +1,10 @@
 /** @type {import('next').NextConfig} */
+const isProd = process.env.NODE_ENV === 'production';
+
 const nextConfig = {
   output: 'export',
-  basePath: '/PixelForge',
+  basePath: isProd ? '/Gaith' : '',
+  assetPrefix: isProd ? '/Gaith/' : '',
   trailingSlash: true,
   images: {
     unoptimized: true,

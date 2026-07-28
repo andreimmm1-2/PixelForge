@@ -5,25 +5,25 @@ import Footer from "@/components/layout/Footer";
 import { GradientBlobs, CursorGlow } from "@/components/ui/Backdrop";
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://northline.studio"),
+  metadataBase: new URL("https://andreimmm1-2.github.io/Gaith"),
   title: {
-    default: "Northline Studio — Web design for startups",
-    template: "%s | Northline Studio",
+    default: "Gaith — Web design for startups",
+    template: "%s | Gaith",
   },
   description:
-    "Northline Studio builds clean, custom websites for startups and small businesses that need a strong online presence.",
+    "Gaith builds clean, custom websites for startups and small businesses that need a strong online presence.",
   openGraph: {
-    title: "Northline Studio — Web design for startups",
+    title: "Gaith — Web design for startups",
     description:
       "Custom websites, redesigns and ongoing support for startups and small businesses. Fast, clear and built to convert.",
-    url: "https://northline.studio",
-    siteName: "Northline Studio",
+    url: "https://andreimmm1-2.github.io/Gaith",
+    siteName: "Gaith",
     locale: "en_GB",
     type: "website",
   },
   twitter: {
     card: "summary_large_image",
-    title: "Northline Studio — Web design for startups",
+    title: "Gaith — Web design for startups",
     description:
       "Custom websites, redesigns and ongoing support for startups and small businesses. Fast, clear and built to convert.",
   },

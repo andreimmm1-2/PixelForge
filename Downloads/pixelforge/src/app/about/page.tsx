@@ -4,7 +4,7 @@ import { CTA } from "@/components/sections/CTA";
 
 export const metadata: Metadata = {
   title: "About Us",
-  description: "Northline Studio is a small UK web design studio helping startups launch with clear, custom-built websites.",
+  description: "Gaith is a small UK web design studio helping startups launch with clear, custom-built websites.",
 };
 
 export default function AboutPage() {
@@ -14,7 +14,7 @@ export default function AboutPage() {
         <SectionHeader eyebrow="About Us" title="A small studio, focused on the essentials" />
         <div className="space-y-5 text-muted text-lg leading-relaxed">
           <p>
-            Northline Studio started as a small collaboration between a designer and a developer
+            Gaith started as a small collaboration between a designer and a developer
             who were tired of seeing startups launch with generic, forgettable sites. We focus on
             practical design and technical craftsmanship so every project earns its place.
           </p>

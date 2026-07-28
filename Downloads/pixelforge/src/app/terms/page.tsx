@@ -12,7 +12,7 @@ export default function TermsPage() {
 
         <h2 className="text-xl font-semibold text-white pt-4">1. Agreement to Terms</h2>
         <p>
-          These Terms of Service govern your use of services provided by Northline Studio
+          These Terms of Service govern your use of services provided by Gaith
           ("we", "us"). By engaging our services, you agree to be bound by these terms.
         </p>
 
@@ -51,7 +51,7 @@ export default function TermsPage() {
 
         <h2 className="text-xl font-semibold text-white pt-4">7. Limitation of Liability</h2>
         <p>
-          Northline Studio shall not be liable for indirect, incidental or consequential damages
+          Gaith shall not be liable for indirect, incidental or consequential damages
           arising from the use of our services, to the maximum extent permitted by law.
         </p>
 

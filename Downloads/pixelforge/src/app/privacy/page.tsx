@@ -12,7 +12,7 @@ export default function PrivacyPage() {
 
         <h2 className="text-xl font-semibold text-white pt-4">1. Who we are</h2>
         <p>
-          Northline Studio ("we", "us") is a web design studio based in the United Kingdom.
+          Gaith ("we", "us") is a web design studio based in the United Kingdom.
           This policy explains how we collect, use and protect your personal data.
         </p>
 

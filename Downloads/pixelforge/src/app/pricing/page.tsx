@@ -8,7 +8,7 @@ import { faq } from "@/lib/constants";
 
 export const metadata: Metadata = {
   title: "Pricing",
-  description: "How Northline Studio scopes and quotes website projects, plus optional monthly care.",
+  description: "How Gaith scopes and quotes website projects, plus optional monthly care.",
 };
 
 const pricingFaq = faq.filter((f) => f.question.toLowerCase().includes("cost") || f.question.toLowerCase().includes("plan") || f.question.toLowerCase().includes("month") || f.question.toLowerCase().includes("pay"));

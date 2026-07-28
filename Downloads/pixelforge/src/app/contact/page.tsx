@@ -5,7 +5,7 @@ import { Mail, MapPin, Clock } from "lucide-react";
 
 export const metadata: Metadata = {
   title: "Contact",
-  description: "Get in touch with Northline Studio for a free website discovery call.",
+  description: "Get in touch with Gaith for a free website discovery call.",
 };
 
 export default function ContactPage() {

@@ -7,11 +7,11 @@ export default function Footer() {
     <footer className="relative z-10 mt-24 border-t border-border">
       <div className="max-w-6xl mx-auto px-6 py-16 grid md:grid-cols-4 gap-10">
         <div>
-          <Link href="/" className="flex items-center gap-3 font-bold text-lg text-white mb-4" aria-label="Northline Studio home">
+          <Link href="/" className="flex items-center gap-3 font-bold text-lg text-white mb-4" aria-label="Gaith home">
             <span className="w-8 h-8 rounded-lg bg-gradient-to-br from-accent to-accent-2 flex items-center justify-center">
               <Sparkles className="w-4 h-4 text-white" />
             </span>
-            <span>Northline Studio</span>
+            <span>Gaith</span>
             <span className="sr-only">— web design</span>
           </Link>
           <p className="text-muted text-sm max-w-xs">
@@ -59,7 +59,7 @@ export default function Footer() {
       </div>
 
       <div className="border-t border-border py-6 text-center text-xs text-muted">
-        © {new Date().getFullYear()} Northline Studio. All rights reserved.
+        © {new Date().getFullYear()} Gaith. All rights reserved.
       </div>
     </footer>
   );
