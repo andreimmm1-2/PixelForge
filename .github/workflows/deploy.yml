@@ -4,6 +4,7 @@ on:
   push:
     branches:
       - main
+      - copilot/vscode-mnn109gm-n243
   workflow_dispatch:
 
 permissions:
