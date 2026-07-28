@@ -38,30 +38,31 @@ export const ContactForm = () => {
     ].join("\n");
 
     try {
-      const response = await fetch("https://formsubmit.co/ajax/andreimad2024@gmail.com", {
-        method: "POST",
+      const response = await fetch('/api/send-email', {
+        method: 'POST',
         headers: {
-          "Content-Type": "application/x-www-form-urlencoded",
-          Accept: "application/json",
+          'Content-Type': 'application/json',
+          Accept: 'application/json',
         },
-        body: new URLSearchParams({
+        body: JSON.stringify({
+          business,
           name,
           email,
-          _replyto: email,
-          _subject: subject,
-          _template: "table",
-          _captcha: "false",
-          message: body,
-        }).toString(),
+          phone,
+          businessType,
+          budget,
+          message,
+        }),
       });
 
-      if (!response.ok) {
-        throw new Error("Unable to send the message right now.");
+      const result = await response.json();
+      if (!response.ok || result?.error) {
+        throw new Error(result?.error || 'Unable to send the message right now.');
       }
 
       setSubmitted(true);
-    } catch {
-      setError("We couldn’t send the message. Please try again or email us directly.");
+    } catch (err: any) {
+      setError(err?.message || 'We couldn’t send the message. Please try again or email us directly.');
     } finally {
       setLoading(false);
     }
