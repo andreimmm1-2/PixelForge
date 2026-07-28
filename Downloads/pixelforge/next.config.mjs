@@ -2,6 +2,7 @@
 const nextConfig = {
   output: 'export',
   basePath: '/PixelForge',
+  trailingSlash: true,
   images: {
     unoptimized: true,
   },

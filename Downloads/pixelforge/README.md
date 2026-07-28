@@ -32,12 +32,12 @@ git push -u origin main
 
 (Create the empty repo on GitHub first, then swap in its URL above.)
 
-## Deploy (recommended: Vercel)
+## Deploy to GitHub Pages
 
-1. Push the repo to GitHub (above).
-2. Go to https://vercel.com/new, import the repo.
-3. Framework preset "Next.js" is auto-detected — just click Deploy.
-4. Your site goes live at a `*.vercel.app` URL, with a custom domain option.
+1. Push this repo to GitHub.
+2. In GitHub, go to **Settings → Pages** and set the source to **GitHub Actions**.
+3. Push to `main` and the workflow will build the static export and publish it.
+4. Your site will be available at `https://YOUR_USERNAME.github.io/PixelForge/`.
 
 ## Notes
 
