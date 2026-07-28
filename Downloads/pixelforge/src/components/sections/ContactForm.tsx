@@ -9,10 +9,12 @@ import { Button } from "@/components/ui/Button";
 export const ContactForm = () => {
   const [submitted, setSubmitted] = useState(false);
   const [loading, setLoading] = useState(false);
+  const [error, setError] = useState<string | null>(null);
 
-  const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
+  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     setLoading(true);
+    setError(null);
 
     const formData = new FormData(e.currentTarget);
     const business = String(formData.get("business") || "").trim();
@@ -23,7 +25,6 @@ export const ContactForm = () => {
     const budget = String(formData.get("budget") || "").trim();
     const message = String(formData.get("message") || "").trim();
 
-    const recipient = "andreimad2024@gmail.com";
     const subject = `Website enquiry${business ? ` from ${business}` : ""}`;
     const body = [
       `Business: ${business || "Not provided"}`,
@@ -36,14 +37,34 @@ export const ContactForm = () => {
       message || "No message provided.",
     ].join("\n");
 
-    const gmailUrl = `https://mail.google.com/mail/?view=cm&fs=1&to=${encodeURIComponent(recipient)}&su=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
-    const mailtoUrl = `mailto:${recipient}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+    try {
+      const response = await fetch("https://formsubmit.co/ajax/andreimad2024@gmail.com", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/x-www-form-urlencoded",
+          Accept: "application/json",
+        },
+        body: new URLSearchParams({
+          name,
+          email,
+          _replyto: email,
+          _subject: subject,
+          _template: "table",
+          _captcha: "false",
+          message: body,
+        }).toString(),
+      });
 
-    window.open(gmailUrl, "_blank", "noopener,noreferrer");
-    window.location.assign(mailtoUrl);
+      if (!response.ok) {
+        throw new Error("Unable to send the message right now.");
+      }
 
-    setLoading(false);
-    setSubmitted(true);
+      setSubmitted(true);
+    } catch {
+      setError("We couldn’t send the message. Please try again or email us directly.");
+    } finally {
+      setLoading(false);
+    }
   };
 
   if (submitted) {
@@ -88,6 +109,7 @@ export const ContactForm = () => {
         </Select>
       </div>
       <Textarea label="Message" id="message" name="message" required placeholder="Tell us a little about your project..." />
+      {error ? <p className="text-sm text-red-400">{error}</p> : null}
       <Button type="submit" fullWidth size="lg" disabled={loading}>
         {loading ? "Sending..." : "Send Message"}
       </Button>
